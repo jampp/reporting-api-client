@@ -22,6 +22,7 @@ Added
 -----
 
 - Add workflows for CI and publishing to PyPI.
+- Add ``readthedocs.yml``.
 
 Changed
 -------
