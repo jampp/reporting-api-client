@@ -20,5 +20,5 @@ jobs:
       - name: Publish package
         run: make release
         env:
-          PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          PYPI_USERNAME: ${{ secrets.PYPI_USER }}
           PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
