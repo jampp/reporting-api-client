@@ -17,6 +17,8 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.7'
+      - name: Install dev requirements
+        run: pip install -r requirements-dev.txt
       - name: Publish package
         run: make release
         env:
