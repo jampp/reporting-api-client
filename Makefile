@@ -79,7 +79,7 @@ docs-spelling: ## check the doc for spelling errors
 	$(MAKE) -C docs -e spelling
 
 release: dist ## package and upload a release
-	twine upload -u $(shell echo PYPI_USERNAME) -p $(shell echo PYPI_PASSWORD) dist/*
+	twine upload -u $(shell echo $PYPI_USERNAME) -p $(shell echo $PYPI_PASSWORD) dist/*
 
 dist: clean ## builds source and wheel package
 	python setup.py sdist
