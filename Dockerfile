@@ -13,9 +13,12 @@ RUN mkdir -p $REPO_PREFIX \
     --disabled-login $USER \
   && chown -R $USER: $REPO_PREFIX
 
+RUN apt-get update && apt-get install -y python3-enchant
+
 # Make installs first to avoid having to reinstall stuff without dependency changes.
 COPY requirements-dev.txt $REPO_PREFIX
-RUN pip install -r $REPO_PREFIX/requirements-dev.txt
+COPY requirements-doc.txt $REPO_PREFIX
+RUN pip install -r $REPO_PREFIX/requirements-dev.txt -r $REPO_PREFIX/requirements-doc.txt
 
 # Copy whole repo and install it.
 COPY . $REPO_PREFIX
