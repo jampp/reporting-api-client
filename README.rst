@@ -42,4 +42,4 @@ Executing the above code should output a result similar to the following:
       {'pivot': {'results': [{'clicks': 123456}]}}
 
 .. _`Jampp's Reporting API`: https://developers.jampp.com/docs/reporting-api/
-.. _docs: https://jampp_reporting_api_client.readthedocs.io/
+.. _docs: https://developers.jampp.com/docs/reporting-api-client/
