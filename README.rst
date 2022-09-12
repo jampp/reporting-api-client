@@ -2,7 +2,7 @@
 Reporting API Client
 ====================
 
-This is a Python Client for `Jampp's Reporting API`_. For more information, check the `docs`.
+This is a Python Client for `Jampp's Reporting API`_. For more information, check the `docs`_.
 
 Features
 ========
