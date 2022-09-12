@@ -15,14 +15,14 @@ When major components get significant changes worthy of mention, they
 can be described in a Major section.
 
 
-v0.3.0 - Unreleased
+v0.3.0 - 2022-09-12
 ===================
 
 Added
 -----
 
 - Add workflows for CI and publishing to PyPI.
-- Add ``readthedocs.yml``.
+- Host documentation publically.
 
 Changed
 -------
