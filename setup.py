@@ -54,7 +54,7 @@ setup(
     author_email="data-infra@jampp.com",
     install_requires=[parse_requirements("requirements.in")],
     extras_require={
-        "dev": parse_requirements("requirements-dev.txt"),
+        "dev": parse_requirements("requirements-dev.in"),
         "pandas": ["pandas"],
     },
     long_description=readme + "\n\n" + history,
