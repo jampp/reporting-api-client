@@ -17,7 +17,9 @@ def parse_requirements(filename):
         ]
         # Remove pip flags
         requirements = [
-            line for line in requirements if not line.strip().startswith("--")
+            line for line in requirements
+            if not line.strip().startswith("--")
+                and not line.strip().startswith("-r")
         ]
         # Remove inline comments
         requirements = [
