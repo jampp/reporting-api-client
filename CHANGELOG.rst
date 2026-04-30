@@ -15,6 +15,15 @@ When major components get significant changes worthy of mention, they
 can be described in a Major section.
 
 
+v0.3.1 - 2026-04-29
+===================
+
+Changed
+-------
+
+- Relax gql requirements to improve compatibility with older stacks
+
+
 v0.3.0 - 2022-09-12
 ===================
 

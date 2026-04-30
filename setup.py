@@ -17,7 +17,9 @@ def parse_requirements(filename):
         ]
         # Remove pip flags
         requirements = [
-            line for line in requirements if not line.strip().startswith("--")
+            line for line in requirements
+            if not line.strip().startswith("--")
+                and not line.strip().startswith("-r")
         ]
         # Remove inline comments
         requirements = [
@@ -54,7 +56,7 @@ setup(
     author_email="data-infra@jampp.com",
     install_requires=[parse_requirements("requirements.in")],
     extras_require={
-        "dev": parse_requirements("requirements-dev.txt"),
+        "dev": parse_requirements("requirements-dev.in"),
         "pandas": ["pandas"],
     },
     long_description=readme + "\n\n" + history,

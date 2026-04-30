@@ -1,2 +1,4 @@
-gql[requests]>=3.0.0
+gql>=3.0.0
+requests<3
+requests_toolbelt>=1.0.0,<2
 requests_oauthlib
