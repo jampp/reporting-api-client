@@ -82,9 +82,9 @@ release: dist ## package and upload a release
 	twine upload -u $(shell echo "${PYPI_USERNAME}") -p $(shell echo "${PYPI_PASSWORD}") dist/*
 
 dist: clean ## builds source and wheel package
+	pip install -U twine setuptools packaging wheel
 	python setup.py sdist
 	python setup.py bdist_wheel
-	pip install twine
 	ls -l dist
 
 install: clean ## install the package to the active Python's site-packages
