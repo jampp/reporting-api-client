@@ -63,7 +63,7 @@ nodeenv==1.7.0
     # via pre-commit
 oauthlib==3.2.0
     # via requests-oauthlib
-packaging==21.3
+packaging==22
     # via
     #   build
     #   pytest
